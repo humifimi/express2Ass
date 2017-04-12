@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+        <%inventors.forEach(function(data){ %>
+        <ul style="list-style-type: none">
+        <li>First Name: <%= data.first%></li>
+        <li>Last Name: <%= data.last%></li>
+        <li>Year : <%= data.year%></li>
+        </ul>
+    <% }); %>
+    
+  </body>
+</html>
